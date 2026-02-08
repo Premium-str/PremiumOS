@@ -1,1 +1,38 @@
+<wallpapers>
+  <wallpaper>
+    <name>PremiumOS Light</name>
+    <filename>/usr/share/backgrounds/premiumos-light-wallpaper.png</filename>
+    <options>zoom</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+
+  <wallpaper>
+    <name>PremiumOS Dark</name>
+    <filename>/usr/share/backgrounds/premium_dark_wallpaper.png</filename>
+    <options>zoom</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+
+  <wallpaper>
+    <name>PremiumOS Greyscale</name>
+    <filename>/usr/share/backgrounds/premium_greyscale_wallpaper.png</filename>
+    <options>zoom</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+
+  <wallpaper>
+    <name>PremiumOS Stripes</name>
+    <filename>/usr/share/backgrounds/premium_stripes_wallpaper.png</filename>
+    <options>zoom</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+</wallpapers>
 
