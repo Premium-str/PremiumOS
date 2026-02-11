@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -43,6 +43,11 @@
     <h1>Designed for You</h1>
     <p>Custom themes. Custom boot. Custom identity.</p>
   </div>
+  
+  <div class="slide">
+    <h1>PremiumOS is Installing!</h1>
+    <p>Your OS is nearly ready!</p>
+  </div>
 
   <script>
     let slides = document.querySelectorAll('.slide');
@@ -52,8 +57,7 @@
       slides[index].classList.remove('active');
       index = (index + 1) % slides.length;
       slides[index].classList.add('active');
-    }, 4000);
+    }, 10000);
   </script>
 </body>
 </html>
-
