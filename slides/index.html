@@ -9,28 +9,51 @@
       font-family: Ubuntu, sans-serif;
       background: #0f111a;
       color: white;
+      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      overflow: hidden;
     }
-    .box {
+    
+    .slide {
+      position: absolute;
       text-align: center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
     }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 20px;
-      opacity: 0.8;
+    
+    .slide.active {
+      opacity: 1;
     }
   </style>
 </head>
 <body>
-  <div class="box">
+  <div class="slide active">
     <h1>Installing PremiumOS</h1>
     <p>Fast. Clean. Yours.</p>
   </div>
+
+  <div class="slide">
+    <h1>Built for Performance</h1>
+    <p>Optimized. Responsive. Lightweight.</p>
+  </div>
+
+  <div class="slide">
+    <h1>Designed for You</h1>
+    <p>Custom themes. Custom boot. Custom identity.</p>
+  </div>
+
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 4000);
+  </script>
 </body>
 </html>
+
