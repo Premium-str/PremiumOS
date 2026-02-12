@@ -1,34 +1,59 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Installing PremiumOS</title>
+
   <style>
     body {
       margin: 0;
       font-family: Ubuntu, sans-serif;
-      background: #0f111a;
+      background: url("background.png") no-repeat center center fixed;
+      background-size: cover;
       color: white;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      position: relative;
     }
-    
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
     .slide {
       position: absolute;
       text-align: center;
       opacity: 0;
       transition: opacity 1s ease-in-out;
+      z-index: 1;
+      padding: 40px;
+      border-radius: 12px;
     }
-    
+
     .slide.active {
       opacity: 1;
     }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
   </style>
 </head>
+
 <body>
+
   <div class="slide active">
     <h1>Installing PremiumOS</h1>
     <p>Fast. Clean. Yours.</p>
@@ -43,14 +68,14 @@
     <h1>Designed for You</h1>
     <p>Custom themes. Custom boot. Custom identity.</p>
   </div>
-  
+
   <div class="slide">
     <h1>PremiumOS is Installing!</h1>
     <p>Your OS is nearly ready!</p>
   </div>
 
   <script>
-    let slides = document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll('.slide');
     let index = 0;
 
     setInterval(() => {
@@ -59,5 +84,6 @@
       slides[index].classList.add('active');
     }, 10000);
   </script>
+
 </body>
 </html>
